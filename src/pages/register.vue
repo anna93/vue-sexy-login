@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'login',
+    name: 'register',
     data() {
       return {
-        msg: 'this is login'
+        msg: 'this is register'
       }
     }
   }
