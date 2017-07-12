@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(http://res.cloudinary.com/dcoifbans/image/upload/o_27/v1499799960/oMZcsAE_h7fwvp.jpg);
+  background: url(http://res.cloudinary.com/dcoifbans/image/upload/o_20/v1499799960/oMZcsAE_h7fwvp.jpg);
   background-size: cover;
 
   .container {
@@ -44,4 +44,44 @@ body {
       color: white;
     }
   }
+  .router-view {
+    background: white;
+    position: absolute;
+    top: -30px;
+    height: 380px;
+    width: 310px;
+
+    &.login {
+      left: 60px;
+      box-shadow: -3px 3px 5px -2px rgba(0, 0, 0, 0.6);
+    }
+    &.register {
+      right: 60px;
+      box-shadow: 3px 3px 5px -2px rgba(0, 0, 0, 0.6);
+    }
+  }
+}
+
+.left-enter-active {
+  transition: all .3s ease;
+}
+.left-leave-active {
+  transition: all 0s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.left-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active for <2.1.8 */ {
+  transform: translateX(-150px);
+  opacity: 0;
+}
+
+.right-enter-active {
+  transition: all .3s ease;
+}
+.right-leave-active {
+  transition: all 0s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.right-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active for <2.1.8 */ {
+  transform: translateX(150px);
+  opacity: 0;
 }

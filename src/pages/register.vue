@@ -1,5 +1,9 @@
 <template>
-  <div>{{msg}}</div>
+  <transition name="left">
+    <div class="router-view register">
+      <br><br><br><b>{{msg}}</b>
+    </div>
+  </transition>
 </template>
 
 <script>
@@ -7,7 +11,7 @@
     name: 'register',
     data() {
       return {
-        msg: 'this is register'
+        msg: 'register form'
       }
     }
   }
