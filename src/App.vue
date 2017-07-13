@@ -20,8 +20,19 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   name: 'app',
+  mounted() {
+    axios.get('https://www.google.co.in')
+      .then(res => {
+        console.warn(res.data);
+      })
+      .catch(err => {
+        console.warn(err);
+      });
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
