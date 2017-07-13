@@ -12,7 +12,7 @@
     data() {
       return {
         msg: 'login form'
-      }
+      };
     }
-  }
+  };
 </script>

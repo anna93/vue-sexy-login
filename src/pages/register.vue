@@ -12,7 +12,7 @@
     data() {
       return {
         msg: 'register form'
-      }
+      };
     }
-  }
+  };
 </script>
