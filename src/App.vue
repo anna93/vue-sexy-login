@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="container">
-      <div class="blur-container"><div class="blur"></div></div>
+      <div class="blur"></div>
       <div class="content">
         <div class="left">
           <h4 style="padding-top: 90px">Already have an account?</h4>
